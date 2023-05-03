@@ -58,6 +58,7 @@ header ul.menu > li > a:hover {
 
 /* Header / menu / basket */
 header .basket {
+    display: none;
     width: 290px;
     padding: 10px 20px;
     border: 1px solid #D2D2D2;
@@ -67,6 +68,9 @@ header .basket {
     position: absolute;
     top: calc(100% + 4px);
     right: -6px;
+}
+header .basket.show {
+    display: block;
 }
 header .basket .arrow {
     width: 20px;
@@ -104,7 +108,7 @@ header .basket ul li a {
     display: block;
     padding: 14px;
     font-size: 13px;
-    color: #0071e3;
+    color: #0071e3; 
 }
 header .basket ul li a:hover {
     text-decoration: underline;
